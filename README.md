@@ -4,7 +4,7 @@ This project hosts the code which is part of upGrad 1st assesment. The code is w
 
 
 
-###Fucntionality
+Functionality
 
 It has the following functionalities
 -> Installing the apache2 packages on ubuntu if it is not already installed
