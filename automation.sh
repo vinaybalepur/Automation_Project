@@ -3,6 +3,7 @@ sudo apt-get update
 
 
 myName=vinay
+S3Bucket=upgrad-vinaybalepur
 
 #This function creates and writes the content to html file. The content includes the size of the tar, time of creation
 function writeToHTML()
@@ -62,7 +63,7 @@ function createCronFile()
 # This copies the file to S3 bucket
 function copyFileToAWSBucket()
 {
-	aws s3 cp $2 s3://"upgrad-vinaybalepur"/$3
+	aws s3 cp $2 s3://$S3Bucket/$3
 }
 
 installAndStartAapache2
